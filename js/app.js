@@ -69,7 +69,7 @@ Player.prototype.checkCollisions = function() {
             // is the bug on the same row as the player?
             if (enemy.y == self.y) {
                 // is the bug on the player?
-                if (enemy.x >= this.x - 30 && enemy.x <= this.x + 30) {
+                if (enemy.x >= self.x - 30 && enemy.x <= self.x + 30) {
                     self.reset();
                 }
             }
